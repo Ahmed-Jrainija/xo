@@ -8,6 +8,7 @@
     const g = document.querySelector('.b7');
     const h = document.querySelector('.b8');
     const i = document.querySelector('.b9');
+    const j = document.querySelector('.text');
 
     function clk (v1) {
       if (player === 'X' && v1.innerText === '') {
@@ -29,13 +30,24 @@
       ((c.innerText === 'X' || c.innerText === 'O') && (c.innerText === e.innerText && c.innerText === g.innerText))
       ) {
           if (player === 'X') {
-            player = 'O';
-            document.querySelector('.text').innerHTML = `${player} wins.`;
+            j.innerHTML = 'O won.'; 
           } else if (player === 'O') {
-            player = 'X';
-            document.querySelector('.text').innerHTML = `${player} wins.`;
+            j.innerHTML = 'X won.';
           }
       } else if (a.innerText !== '' && b.innerText !== '' && c.innerText !== '' && d.innerText !== '' && e.innerText !== '' && f.innerText !== '' && g.innerText !== '' && h.innerText !== '' && i.innerText !== '') {
-        document.querySelector('.text').innerHTML = 'Draw.';
+        j.innerHTML = 'Draw.';
       }
+    }
+
+    function reset () {
+      a.innerText = '';
+      b.innerText = '';
+      c.innerText = '';
+      d.innerText = '';
+      e.innerText = '';
+      f.innerText = '';
+      g.innerText = '';
+      h.innerText = '';
+      i.innerText = '';
+      j.innerHTML = '';
     }

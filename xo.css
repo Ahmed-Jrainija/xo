@@ -25,3 +25,23 @@
   font-size: 15px;
   margin-left: 100px;
 }
+.bt {
+  background-color: rgb(30, 30, 163);
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.bt:hover {
+  background-color: rgb(57, 57, 165);
+}
+.bt:active {
+  background-color: rgb(75, 75, 160);
+}
