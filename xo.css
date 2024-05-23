@@ -1,0 +1,27 @@
+.box {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  border: solid black 3px;
+  width: 300px;
+  height: 314px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
+  height: 100px;
+  border: solid black 3px;
+  cursor: pointer;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 100px;
+}
